@@ -1,0 +1,530 @@
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+
+html {
+/* background-image: url ("graphics/backgroundbluedot-01.png");
+background-repeat: repeat; */
+}
+
+body {
+font-family: 'Helvetica', Arial, sans-serif;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 1.125px;
+word-spacing: 1px;
+color: #318ce7;
+background: #ffffff;
+height: 100%;
+overflow-x: hidden;
+background-image: url("graphics/backgroundbluedot-01.png");
+background-size: 25px, 25px;
+background-repeat: repeat;
+/* width; 100%; */
+}
+
+
+p {
+  line-height: 22px;
+}
+
+h4 {
+  line-height: normal;
+}
+
+.site
+{list-style: none;
+  /* width: 100%; */
+  /* height: 3500px;
+  overflow: hidden;
+  position: absolute;
+  color: #318ce7;
+  top:0px; */
+  /* margin-bottom: 10px;
+  padding-bottom: 10px; */
+}
+
+.container-chaos {
+  overflow: visible;
+  position: relative;}
+
+.container-chaos li {
+  position: absolute;
+  z-index: 1;}
+
+.container-chaos li a {
+  display: block;
+  padding: 0;
+  border: 0;}
+
+.container-chaos li img {
+  margin: 0;
+  padding: 0;
+  outline: 0;}
+
+.container-chaos .hover {
+  display: block;
+  padding: 0;
+  border: 0;}
+
+/*THE PART THAT NEEDS THE MOST WORK*/
+
+/* Tooltip container */
+ul#listcontainer .work-item {
+  /* display: block; */
+      /* width: 210px;
+    height: 130px;
+    border: 1px solid red; */
+  position: absolute;
+}
+.work-item span {
+    position: absolute;
+    bottom: -18px;
+    /* height: 40px; */
+    left: 0px;
+    right: 0;
+    width: auto;
+    padding: 2px 2px;
+    background-color: #FFF;
+    color: #318CE7;
+    opacity: 0;
+    transition: opacity .75s ease-in-out;
+    text-align: center;
+    font-family: Arial;
+    font-size: 14px;
+    z-index: 200;
+    /* z-index: auto; */
+}
+
+/* .work-item span {
+    position: absolute;
+    bottom: -18px;
+    left: 0px;
+    right: 0;
+    width: auto;
+    padding: 2px 1px;
+    background-color: #FFF;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: #318CE7;
+    opacity: 0;
+    transition: opacity .75s ease-in-out;
+    text-align: center;
+    font-family: Arial;
+    font-size: 14px;
+    z-index: inherit;
+} */
+
+
+.work-item:hover span {
+    opacity: 1;
+}
+.work-item:hover span:hover {
+    /* background: red; */
+    opacity: 1;
+}
+
+/*END THE PART THAT NEEDS THE MOST WORK*/
+
+
+.btn button {
+  background-color: rgba(255, 255, 255, 255);
+  outline-color: red;
+  width: auto;
+  height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin: 30px;
+  position: fixed;
+  z-index: 10000;
+  cursor: pointer; /* Pointer/hand icon */
+  display: block; /* Make the buttons appear below each other */
+}
+
+.btn button {
+  border: 1px;
+}
+
+/* The Modal (background) */
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* was fixed */
+  overflow-y: auto;
+  z-index: 10000;
+  padding-top: 100px;
+  left: 0px;
+  top: 0px;
+  width: 100%; /* Full width */
+  height: 85%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* The Modal (background) */
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* was fixed */
+  overflow-y: auto;
+  z-index: 10000;
+  padding-top: 100px;
+  left: 0px;
+  top: 0px;
+  width: 100%; /* Full width */
+  height: 85%; /* Full height */
+  overflow: auto; /* Enable scroll if needed*/
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* The Modal (background) */
+.modal3 {
+  display: none; /* Hidden by default */
+  position: fixed; /* was fixed */
+  overflow-y: auto;
+  z-index: 10000;
+  padding-top: 100px;
+  left: 0px;
+  top: 0px;
+  width: 100%; /* Full width */
+  height: 85%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+ /* needs flexbox ! */
+.modal1-content {
+  background-color: #fefefe;
+  position: relative;
+  /* z-index: 10000; */
+  display: fixed;
+   /* Sit on top */
+  margin: auto;
+  left: 0px;
+  overflow-y: auto;
+  overflow: scroll;
+  left: 0px;
+  padding: 10px 40px 40px 40px;
+  border: 1px solid #888;
+  height: auto;
+  width: 70%;
+  height: 70%;
+}
+
+/* Modal Content */
+ /* needs flexbox ! */
+.modal2-content {
+  background-color: #fefefe;
+  position: relative;
+  /* z-index: 10000; */
+  display: fixed;
+   /* Sit on top */
+  margin: auto;
+  left: 0px;
+  overflow-y: auto;
+  overflow: scroll;
+  padding: 10px 40px 40px 40px;
+  border: 1px solid #888;
+  height: auto;
+  width: 70%;
+  height: 70%;
+}
+
+/* Modal Content */
+ /* needs flexbox ! */
+.modal3-content {
+  background-color: #fefefe;
+  position: relative;
+  /* z-index: 10000; */
+  display: fixed;
+   /* Sit on top */
+  margin: auto;
+  left: 0px;
+  overflow-y: auto;
+  overflow: scroll;
+  padding: 10px 40px 40px 40px;
+  border: 1px solid #888;
+  height: auto;
+  width: 70%;
+  height: 70%;
+}
+
+/* The Close Buttons */
+.close1 {
+  color: #000000;
+  padding-top: 20px;
+  float: right;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus
+ {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.error {color: red;}
+.infinite_navigation {display: none;}
+/* @end */
+
+/* The Close Button */
+.close2 {
+  color: #000000;
+  padding-top: 20px;
+  float: right;
+  font-size: 32px;
+  font-weight: bold;
+  /* position: fixed; */
+}
+
+.close2:hover,
+.close2:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close3 {
+  color: #000000;
+  float: right;
+  padding-top: 20px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* img.thumb data-title{
+  visibility: hidden;
+} */
+
+/* NEW BUTTON */
+
+
+a title {
+background-color: red;
+}
+
+
+
+
+/* @group typo */
+h1 {
+  font-size: 26px;
+  color: #4B8EEF;
+  font-style: normal;
+  font-weight: 500;}
+/* @end */
+
+
+/* module navigation, links */
+a:link, a:visited, a:hover {color: #318ce7; text-decoration: none;}
+a:hover {border-bottom: 1px solid red; padding: 0;}
+/* @end */
+
+
+/* @group html5 magic */
+::-moz-selection {background:#000; color:#fff; text-shadow:none;}
+::selection {background:#000; color:#fff; text-shadow:none;}
+/* @end */
+
+footer {
+  display: flex;
+  position: fixed;
+  right: 30px;
+  bottom: 25px;
+  z-index: 1000;
+  text-align: center;
+}
+
+/*MEDIA QUERIES*/
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* ----------- iPad Pro 10.5" ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 834px)
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen
+  and (min-device-width: 834px)
+  and (max-device-width: 834px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen
+  and (min-device-width: 1112px)
+  and (max-device-width: 1112px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen
+  and (min-device-width: 1366px)
+  and (max-device-width: 1366px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}

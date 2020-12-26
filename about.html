@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+
+  <body>
+    <div class="popup" onclick="myFunction()">Click me!<span class="popuptext" id="myPopup">Popup text...</span>
+    </div>
+
+    <script>
+    // When the user clicks on div, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
+
+      <script src="js/popup.js" type="text/javascript"></script>
+
+  </body>
+</html>
